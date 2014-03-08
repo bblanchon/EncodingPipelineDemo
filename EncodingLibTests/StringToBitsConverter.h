@@ -10,5 +10,12 @@ class StringToBitsConverter : public Producer<bit>
 {
 public:
 	
-	void Receive(const char* s);
+	void receive(const char* s)
+	{
+		while (*s)
+		{
+			emit((bit) *s);
+			s++;
+		}
+	}
 };

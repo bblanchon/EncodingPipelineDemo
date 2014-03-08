@@ -27,26 +27,26 @@ namespace EncodingLibTests
 
 		TEST_METHOD(Receive_00_Emit_00000000)
 		{
-			bytesToBits.Receive(0x00);
+			bytesToBits.receive(0x00);
 			AssertEmitted("00000000");
 		}
 
 		TEST_METHOD(Receive_FF_Emit_11111111)
 		{
-			bytesToBits.Receive(0xFF);
+			bytesToBits.receive(0xFF);
 			AssertEmitted("11111111");
 		}
 
 		TEST_METHOD(Receive_F0_Emit_11110000)
 		{
-			bytesToBits.Receive(0xF0);
+			bytesToBits.receive(0xF0);
 			AssertEmitted("11110000");
 		}
 
 		TEST_METHOD(Receive_F00F_Emit_1111000000001111)
 		{
-			bytesToBits.Receive(0xF0);
-			bytesToBits.Receive(0x0F);
+			bytesToBits.receive(0xF0);
+			bytesToBits.receive(0x0F);
 			AssertEmitted("1111000000001111");
 		}
 

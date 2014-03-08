@@ -5,6 +5,6 @@ class Consumer
 {
 public:
 
-	virtual void Receive(T value) = 0;
+	virtual void receive(T value) = 0;
 };
 

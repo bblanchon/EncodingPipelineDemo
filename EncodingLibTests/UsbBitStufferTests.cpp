@@ -61,7 +61,7 @@ namespace EncodingLibTests
 
 		void ReceiveBits__(const char * bits)
 		{
-			stringToBits.Receive(bits);
+			stringToBits.receive(bits);
 		}
 
 		void AssertEmitted(const char * expected)

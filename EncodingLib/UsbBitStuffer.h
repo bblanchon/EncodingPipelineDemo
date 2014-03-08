@@ -8,7 +8,7 @@ class UsbBitStuffer : public Consumer<bit>, public Producer<bit>
 {
 public:
 
-	virtual void Receive(bit bitReceived);
+	virtual void receive(bit bitReceived);
 
 private:
 

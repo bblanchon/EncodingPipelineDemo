@@ -18,10 +18,10 @@ public:
 
 protected:
 
-	void Emit(T value)
+	void emit(T value)
 	{
 		if (consumer)
-			consumer->Receive(value);
+			consumer->receive(value);
 	}
 	
 private:

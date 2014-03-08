@@ -1,6 +1,6 @@
 #include "UsbBitStuffer.h"
 
-void UsbBitStuffer::Receive(bit bitReceived)
+void UsbBitStuffer::receive(bit bitReceived)
 {
 	if (bitReceived == bit::ONE)
 	{
@@ -8,7 +8,7 @@ void UsbBitStuffer::Receive(bit bitReceived)
 
 		if (consecutiveOnes > MAX_CONSECUTIVE_ONES)
 		{
-			Emit(bit::ZERO);
+			emit(bit::ZERO);
 			consecutiveOnes = 1;
 		}
 	}
@@ -17,5 +17,5 @@ void UsbBitStuffer::Receive(bit bitReceived)
 		consecutiveOnes = 0;
 	}
 
-	Emit(bitReceived);
+	emit(bitReceived);
 }

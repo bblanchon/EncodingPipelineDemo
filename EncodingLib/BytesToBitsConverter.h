@@ -9,10 +9,10 @@ class BytesToBitsConverter : public Consumer<byte>, public Producer<bit>
 {
 public:
 	
-	virtual void Receive(byte byteReceived);
+	virtual void receive(byte byteReceived);
 
 private:
 
-	void EmitBitAtIndex(byte byteReceived, int index);
+	void emitBitAtIndex(byte byteReceived, int index);
 };
 

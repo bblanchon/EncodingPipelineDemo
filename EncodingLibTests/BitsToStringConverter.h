@@ -10,7 +10,7 @@ using namespace std;
 class BitsToStringConverter : public Consumer<bit>
 {
 public:
-	virtual void Receive(bit receivedBit)
+	virtual void receive(bit receivedBit)
 	{
 		buffer += (char) receivedBit;
 	}
