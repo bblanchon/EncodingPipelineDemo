@@ -6,3 +6,4 @@
 #include "ByteStreamWriter.h"
 #include "NrziForwardConverter.h"
 #include "UsbBitStuffer.h"
+#include "UsbBitUnstuffer.h"

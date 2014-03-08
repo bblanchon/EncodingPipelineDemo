@@ -47,6 +47,9 @@
     <ClInclude Include="ByteStreamWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UsbBitUnstuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BytesToBitsConverter.cpp">
@@ -62,6 +65,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ByteStreamReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsbBitUnstuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

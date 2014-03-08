@@ -52,5 +52,8 @@
     <ClCompile Include="ByteStreamWriterTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UsbBitUnstufferTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
