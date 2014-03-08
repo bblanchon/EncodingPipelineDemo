@@ -50,6 +50,9 @@
     <ClInclude Include="UsbBitUnstuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NrziReverseConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BytesToBitsConverter.cpp">
@@ -68,6 +71,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UsbBitUnstuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NrziReverseConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

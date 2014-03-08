@@ -55,5 +55,8 @@
     <ClCompile Include="UsbBitUnstufferTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NrziReverseConverterTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

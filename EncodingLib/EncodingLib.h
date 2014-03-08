@@ -5,5 +5,6 @@
 #include "ByteStreamReader.h"
 #include "ByteStreamWriter.h"
 #include "NrziForwardConverter.h"
+#include "NrziReverseConverter.h"
 #include "UsbBitStuffer.h"
 #include "UsbBitUnstuffer.h"

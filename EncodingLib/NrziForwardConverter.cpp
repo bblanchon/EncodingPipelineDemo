@@ -1,6 +1,5 @@
 #include "NrziForwardConverter.h"
 
-
 void NrziForwardConverter::receive(bit inputBit)
 {
 	if (inputBit == bit::ZERO)
