@@ -2,5 +2,6 @@
 #include "BitsToBytesConverter.h"
 #include "Byte.h"
 #include "BytesToBitsConverter.h"
+#include "ByteStreamReader.h"
 #include "NrziForwardConverter.h"
 #include "UsbBitStuffer.h"

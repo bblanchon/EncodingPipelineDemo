@@ -5,6 +5,8 @@
 #include "Byte.h"
 #include "Consumer.h"
 
+using namespace std;
+
 class BytesToStringConverter : public Consumer<byte>
 {
 public:
