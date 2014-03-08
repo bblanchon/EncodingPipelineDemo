@@ -2,16 +2,23 @@
 
 #include "Consumer.h"
 
-template<class T> class Consumer;
+template<class TFrom, class TTo> class Converter;
 
 template<class T>
 class Producer
 {
 public:
 
-	void setConsumer(Consumer<T>& c)
+	void then(Consumer<T>& c)
 	{
 		consumer = &c;
+	}
+
+	template<class TTo>
+	Producer<TTo>& then(Converter<T, TTo>& c)
+	{
+		consumer = &c;
+		return c;
 	}
 
 protected:

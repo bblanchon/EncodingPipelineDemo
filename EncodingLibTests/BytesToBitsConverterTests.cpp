@@ -10,7 +10,7 @@ namespace EncodingLibTests
 {		
 	TEST_CLASS(BytesToBitsConverterTests)
 	{
-		StringToBytesConverter stringToByte;
+		StringToBytesConverter stringToBytes;
 		BytesToBitsConverter bytesToBits;
  		BitsToStringConverter bitsToString;
 
@@ -18,8 +18,9 @@ namespace EncodingLibTests
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToByte.setConsumer(bytesToBits);
-			bytesToBits.setConsumer(bitsToString);
+			stringToBytes
+				.then(bytesToBits)
+				.then(bitsToString);
 		}
 		
 		TEST_METHOD(Receive_Nothing_Emit_Nothing)
@@ -54,7 +55,7 @@ namespace EncodingLibTests
 
 		void Receive(const char* bytes)
 		{
-			stringToByte.receive(bytes);
+			stringToBytes.receive(bytes);
 		}
 
 		void Emitted(const char* expected)

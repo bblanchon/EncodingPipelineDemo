@@ -18,8 +18,9 @@ namespace EncodingLibTests
 		
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBits.setConsumer(bitStuffer);
-			bitStuffer.setConsumer(bitsToString);
+			stringToBits
+				.then(bitStuffer)
+				.then(bitsToString);
 		}
 
 		TEST_METHOD(Receive_One_Emit_Zero)

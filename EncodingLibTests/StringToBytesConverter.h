@@ -25,6 +25,6 @@ public:
 	byte parseByte(const char *s)
 	{
 		char tmp[] = { s[0], s[1], 0 };
-		return strtol(tmp, NULL, 16);
+		return (byte) strtol(tmp, NULL, 16);
 	}
 };

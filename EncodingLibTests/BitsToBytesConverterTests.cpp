@@ -18,8 +18,9 @@ namespace EncodingLibTests
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBits.setConsumer(bitsToBytes);
-			bitsToBytes.setConsumer(bytesToString);
+			stringToBits
+				.then(bitsToBytes)
+				.then(bytesToString);
 		}
 
 		TEST_METHOD(Receive_Nothing_Emit_Nothing)
