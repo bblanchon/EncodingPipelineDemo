@@ -11,5 +11,7 @@
 #include "CppUnitTest.h"
 
 #include <string>
+#include <sstream>
+#include <iomanip>
 
 // TODO: reference additional headers your program requires here

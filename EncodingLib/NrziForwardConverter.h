@@ -1,10 +1,9 @@
 #pragma once
 
 #include "Bit.h"
-#include "Consumer.h"
-#include "Producer.h"
+#include "Converter.h"
 
-class NrziForwardConverter : public Consumer<bit>, public Producer<bit>
+class NrziForwardConverter : public Converter<bit, bit>
 {
 public:
 	

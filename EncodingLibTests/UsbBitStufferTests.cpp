@@ -24,46 +24,46 @@ namespace EncodingLibTests
 		
 		TEST_METHOD(Receive_Zero_Emit_Zero)
 		{
-			ReceiveBits__("0");
-			AssertEmitted("0");
+			Receive("0");
+			Emitted("0");
 		}
 
 		TEST_METHOD(Receive_One_Emit_One)
 		{
-			ReceiveBits__("1");
-			AssertEmitted("1");
+			Receive("1");
+			Emitted("1");
 		}
 
 		TEST_METHOD(Receive_7zeros_Emit_7zeros)
 		{
-			ReceiveBits__("0000000");
-			AssertEmitted("0000000");
+			Receive("0000000");
+			Emitted("0000000");
 		}
 
 		TEST_METHOD(Receive_6ones_Emit_6ones)
 		{
-			ReceiveBits__("111111");
-			AssertEmitted("111111");
+			Receive("111111");
+			Emitted("111111");
 		}
 
 		TEST_METHOD(Receive_7ones_Emit_6ones_zero_one)
 		{
-			ReceiveBits__("1111111");
-			AssertEmitted("11111101");
+			Receive("1111111");
+			Emitted("11111101");
 		}
 
 		TEST_METHOD(Receive_13ones_Emit_6ones_zero_6ones_zero_one)
 		{
-			ReceiveBits__("1111111111111");
-			AssertEmitted("111111011111101");
+			Receive("1111111111111");
+			Emitted("111111011111101");
 		}
 
-		void ReceiveBits__(const char * bits)
+		void Receive(const char * bits)
 		{
 			stringToBits.receive(bits);
 		}
 
-		void AssertEmitted(const char * expected)
+		void Emitted(const char * expected)
 		{
 			Assert::AreEqual(expected, bitsToString.c_str());
 		}

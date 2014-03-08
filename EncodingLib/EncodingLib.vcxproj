@@ -65,6 +65,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bit.h" />
+    <ClInclude Include="BitsToBytesConverter.h" />
+    <ClInclude Include="Converter.h" />
     <ClInclude Include="NrziForwardConverter.h" />
     <ClInclude Include="UsbBitStuffer.h" />
     <ClInclude Include="Byte.h" />
@@ -74,6 +76,7 @@
     <ClInclude Include="Producer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BitsToBytesConverter.cpp" />
     <ClCompile Include="NrziForwardConverter.cpp" />
     <ClCompile Include="UsbBitStuffer.cpp" />
     <ClCompile Include="BytesToBitsConverter.cpp" />

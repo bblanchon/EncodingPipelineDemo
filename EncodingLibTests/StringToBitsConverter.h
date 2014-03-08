@@ -17,5 +17,7 @@ public:
 			emit((bit) *s);
 			s++;
 		}
+
+		flush();
 	}
 };

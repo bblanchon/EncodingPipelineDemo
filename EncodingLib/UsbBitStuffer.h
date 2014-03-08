@@ -1,10 +1,9 @@
 #pragma once
 
 #include "Bit.h"
-#include "Consumer.h"
-#include "Producer.h"
+#include "Converter.h"
 
-class UsbBitStuffer : public Consumer<bit>, public Producer<bit>
+class UsbBitStuffer : public Converter<bit, bit>
 {
 public:
 

@@ -1,4 +1,5 @@
 #include "Bit.h"
+#include "BitsToBytesConverter.h"
 #include "Byte.h"
 #include "BytesToBitsConverter.h"
 #include "NrziForwardConverter.h"

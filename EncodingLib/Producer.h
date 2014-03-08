@@ -23,6 +23,12 @@ protected:
 		if (consumer)
 			consumer->receive(value);
 	}
+
+	void flush()
+	{
+		if (consumer)
+			consumer->flush();
+	}
 	
 private:
 

@@ -84,11 +84,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BitsToStringConverter.h" />
+    <ClInclude Include="BytesToStringConverter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToBitsConverter.h" />
+    <ClInclude Include="StringToBytesConverter.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BitsToBytesConverterTests.cpp" />
     <ClCompile Include="NrziForwardConverterTests.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -2,10 +2,9 @@
 
 #include "Bit.h"
 #include "Byte.h"
-#include "Consumer.h"
-#include "Producer.h"
+#include "Converter.h"
 
-class BytesToBitsConverter : public Consumer<byte>, public Producer<bit>
+class BytesToBitsConverter : public Converter<byte,bit>
 {
 public:
 	
