@@ -10,6 +10,10 @@ void UsbBitUnstuffer::receive(bit bitReceived)
 		{
 			consecutiveOnes++;
 		}
+		else
+		{
+			consecutiveOnes = 0;
+		}
 	}
 	else
 	{

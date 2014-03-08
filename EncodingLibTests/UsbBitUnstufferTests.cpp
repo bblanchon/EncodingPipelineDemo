@@ -66,6 +66,12 @@ namespace EncodingLibTests
 			Emitted("1111111111111");
 		}
 
+		TEST_METHOD(Receive_5ones_zero_5ones_Emit_5ones_zero_5ones)
+		{
+			Receive("11111011111");
+			Emitted("11111011111");
+		}
+
 		void Receive(const char * bits)
 		{
 			stringToBits.receive(bits);
