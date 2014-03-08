@@ -7,8 +7,6 @@ template<class T> class Consumer;
 template<class T>
 class Producer
 {
-	friend class Consumer<T>;
-
 public:
 
 	void setConsumer(Consumer<T>& c)
