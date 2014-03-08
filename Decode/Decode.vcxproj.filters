@@ -11,7 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Encode.cpp">
+    <ClCompile Include="Decode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
