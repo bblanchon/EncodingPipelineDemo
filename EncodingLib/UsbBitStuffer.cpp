@@ -2,20 +2,20 @@
 
 void UsbBitStuffer::receive(bit bitReceived)
 {
+	emit(bitReceived);
+
 	if (bitReceived == bit::ONE)
 	{
 		consecutiveOnes++;
 
-		if (consecutiveOnes > MAX_CONSECUTIVE_ONES)
+		if (consecutiveOnes >= MAX_CONSECUTIVE_ONES)
 		{
 			emit(bit::ZERO);
-			consecutiveOnes = 1;
+			consecutiveOnes = 0;
 		}
 	}
 	else
 	{
 		consecutiveOnes = 0;
 	}
-
-	emit(bitReceived);
 }

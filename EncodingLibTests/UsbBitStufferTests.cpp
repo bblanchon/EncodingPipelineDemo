@@ -41,10 +41,10 @@ namespace EncodingLibTests
 			Emitted("0000000");
 		}
 
-		TEST_METHOD(Receive_6ones_Emit_6ones)
+		TEST_METHOD(Receive_6ones_Emit_6one_zero)
 		{
 			Receive("111111");
-			Emitted("111111");
+			Emitted("1111110");
 		}
 
 		TEST_METHOD(Receive_7ones_Emit_6ones_zero_one)
@@ -52,6 +52,13 @@ namespace EncodingLibTests
 			Receive("1111111");
 			Emitted("11111101");
 		}
+
+		TEST_METHOD(Receive_12ones_Emit_6ones_zero_6ones_zero)
+		{
+			Receive("111111111111");
+			Emitted("11111101111110");
+		}
+
 
 		TEST_METHOD(Receive_13ones_Emit_6ones_zero_6ones_zero_one)
 		{
