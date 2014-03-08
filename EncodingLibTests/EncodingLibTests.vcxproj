@@ -93,6 +93,7 @@
   <ItemGroup>
     <ClCompile Include="BitsToBytesConverterTests.cpp" />
     <ClCompile Include="ByteStreamReaderTests.cpp" />
+    <ClCompile Include="ByteStreamWriterTests.cpp" />
     <ClCompile Include="NrziForwardConverterTests.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
