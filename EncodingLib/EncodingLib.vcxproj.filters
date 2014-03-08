@@ -32,12 +32,18 @@
     <ClInclude Include="UsbBitStuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NrziForwardConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BytesToBitsConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UsbBitStuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NrziForwardConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

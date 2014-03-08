@@ -8,54 +8,54 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(UsbBitStufferTests)
+	TEST_CLASS(NrziForwardConverterTests)
 	{
-		UsbBitStuffer bitStuffer;
+		NrziForwardConverter bitStuffer;
 		BitsToStringConverter bitsToString;
 		StringToBitsConverter stringToBits;
-		
-	public:
 
+	public:
+		
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
 			stringToBits.setConsumer(bitStuffer);
 			bitStuffer.setConsumer(bitsToString);
 		}
-		
-		TEST_METHOD(Receive_Zero_Emit_Zero)
+
+		TEST_METHOD(Receive_One_Emit_Zero)
 		{
-			ReceiveBits__("0");
+			ReceiveBits__("1");
 			AssertEmitted("0");
 		}
 
-		TEST_METHOD(Receive_One_Emit_One)
+		TEST_METHOD(Receive_Zero_Emit_One)
 		{
-			ReceiveBits__("1");
+			ReceiveBits__("0");
 			AssertEmitted("1");
 		}
 
-		TEST_METHOD(Receive_7zeros_Emit_7zeros)
+		TEST_METHOD(Receive_2ones_Emit_2zeros)
 		{
-			ReceiveBits__("0000000");
-			AssertEmitted("0000000");
+			ReceiveBits__("11");
+			AssertEmitted("00");
 		}
 
-		TEST_METHOD(Receive_6ones_Emit_6ones)
+		TEST_METHOD(Receive_2zeros_Emit_One_Zero)
 		{
-			ReceiveBits__("111111");
-			AssertEmitted("111111");
+			ReceiveBits__("00");
+			AssertEmitted("10");
+		}
+		
+		TEST_METHOD(Receive_Zero_One_Emit_2ones)
+		{
+			ReceiveBits__("01");
+			AssertEmitted("11");
 		}
 
-		TEST_METHOD(Receive_7ones_Emit_6ones_zero_one)
+		TEST_METHOD(Receive_One_Zero_Emit_Zero_One)
 		{
-			ReceiveBits__("1111111");
-			AssertEmitted("11111101");
-		}
-
-		TEST_METHOD(Receive_13ones_Emit_6ones_zero_6ones_zero_one)
-		{
-			ReceiveBits__("1111111111111");
-			AssertEmitted("111111011111101");
+			ReceiveBits__("10");
+			AssertEmitted("01");
 		}
 
 		void ReceiveBits__(const char * bits)

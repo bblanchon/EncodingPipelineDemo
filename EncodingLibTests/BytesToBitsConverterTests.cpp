@@ -3,7 +3,6 @@
 #include "EncodingLib.h"
 #include "BitsToStringConverter.h"
 
-using namespace std;
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
