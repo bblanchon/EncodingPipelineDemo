@@ -20,12 +20,21 @@
     <ClInclude Include="BitsToStringConverter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="StringToBitsConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BytesToBitsConverterTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsbBitStufferTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringToBitsConverter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

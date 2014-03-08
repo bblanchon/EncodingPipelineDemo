@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Bit.h" />
+    <ClInclude Include="UsbBitStuffer.h" />
     <ClInclude Include="Byte.h" />
     <ClInclude Include="BytesToBitsConverter.h" />
     <ClInclude Include="Consumer.h" />
@@ -72,6 +73,7 @@
     <ClInclude Include="Producer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="UsbBitStuffer.cpp" />
     <ClCompile Include="BytesToBitsConverter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
