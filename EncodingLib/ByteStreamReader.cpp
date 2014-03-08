@@ -2,10 +2,10 @@
 
 void ByteStreamReader::readFrom(std::istream& stream)
 {
-	int c;
-
-	while ((c = stream.get())>0)
+	while (true)
 	{
+		int c = stream.get();
+		if (stream.eof()) break;
 		emit(c);
 	}
 
