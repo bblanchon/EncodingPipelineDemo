@@ -7,11 +7,11 @@
 class BytesToBitsConverter : public Converter<Byte,Bit>
 {
 public:
-	
-	virtual void receive(Byte inputByte);
+    
+    virtual void receive(Byte inputByte);
 
 private:
 
-	void emitBitAtIndex(Byte inputByte, int index);
+    void emitBitAtIndex(Byte inputByte, int index);
 };
 

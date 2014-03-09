@@ -2,15 +2,15 @@
 
 void NrziEncoder::receive(Bit inputBit)
 {
-	if (inputBit == Bit::ZERO)
-	{
-		invertLevel();
-	}
+    if (inputBit == Bit::ZERO)
+    {
+        invertLevel();
+    }
 
-	emit(currentLevel);
+    emit(currentLevel);
 }
 
 void NrziEncoder::invertLevel()
 {
-	currentLevel = currentLevel == Bit::ONE ? Bit::ZERO : Bit::ONE;
+    currentLevel = currentLevel == Bit::ONE ? Bit::ZERO : Bit::ONE;
 }

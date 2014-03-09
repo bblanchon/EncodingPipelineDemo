@@ -9,23 +9,23 @@ class StreamWriter : public Consumer<Byte>
 {
 public:
 
-	StreamWriter(std::ostream& s)
-		: stream(s)
-	{
-	}
+    StreamWriter(std::ostream& s)
+        : stream(s)
+    {
+    }
 
-	virtual void receive(Byte inputByte)
-	{
-		stream.put(inputByte);
-	}
+    virtual void receive(Byte inputByte)
+    {
+        stream.put(inputByte);
+    }
 
-	virtual void flush()
-	{
-		stream.flush();
-	}
-	
+    virtual void flush()
+    {
+        stream.flush();
+    }
+    
 private:
 
-	std::ostream& stream;
+    std::ostream& stream;
 };
 

@@ -7,40 +7,40 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(StreamReaderTests)
-	{
-		StreamReader     reader;
-		ByteStringWriter writer;
+    TEST_CLASS(StreamReaderTests)
+    {
+        StreamReader     reader;
+        ByteStringWriter writer;
 
-	public:
+    public:
 
-		TEST_METHOD_INITIALIZE(Initialize)
-		{
-			reader.then(writer);
-		}
-		
-		TEST_METHOD(Read_Hello_Emit_48656C6C6F)
-		{
-			Read("Hello");
-			Emitted("48656C6C6F");
-		}
+        TEST_METHOD_INITIALIZE(Initialize)
+        {
+            reader.then(writer);
+        }
+        
+        TEST_METHOD(Read_Hello_Emit_48656C6C6F)
+        {
+            Read("Hello");
+            Emitted("48656C6C6F");
+        }
 
-		TEST_METHOD(Read_Nothing_Emit_Nothing)
-		{
-			Read("");
-			Emitted("");
-		}
+        TEST_METHOD(Read_Nothing_Emit_Nothing)
+        {
+            Read("");
+            Emitted("");
+        }
 
-		void Read(const char* bytes)
-		{
-			std::stringstream buf(bytes);
-			
-			reader.readFrom(buf);
-		}
+        void Read(const char* bytes)
+        {
+            std::stringstream buf(bytes);
+            
+            reader.readFrom(buf);
+        }
 
-		void Emitted(const char* expected)
-		{
-			Assert::AreEqual(expected, writer.c_str());
-		}
-	};
+        void Emitted(const char* expected)
+        {
+            Assert::AreEqual(expected, writer.c_str());
+        }
+    };
 }

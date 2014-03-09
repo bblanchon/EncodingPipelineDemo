@@ -2,7 +2,7 @@
 
 void NrziDecoder::receive(Bit inputBit)
 {
-	emit(inputBit != currentLevel ? Bit::ZERO : Bit::ONE);
+    emit(inputBit != currentLevel ? Bit::ZERO : Bit::ONE);
 
-	currentLevel = inputBit;
+    currentLevel = inputBit;
 }

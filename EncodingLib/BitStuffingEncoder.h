@@ -7,12 +7,12 @@ class BitStuffingEncoder : public Converter<Bit, Bit>
 {
 public:
 
-	virtual void receive(Bit inputBit);
+    virtual void receive(Bit inputBit);
 
 private:
 
-	const int MAX_CONSECUTIVE_ONES = 6;
+    const int MAX_CONSECUTIVE_ONES = 6;
 
-	int consecutiveOnes = 0;
+    int consecutiveOnes = 0;
 };
 

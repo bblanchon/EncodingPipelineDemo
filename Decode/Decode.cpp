@@ -9,27 +9,27 @@
 
 void setBinaryMode()
 {
-	_setmode(_fileno(stdin), _O_BINARY);
-	_setmode(_fileno(stdout), _O_BINARY);
+    _setmode(_fileno(stdin), _O_BINARY);
+    _setmode(_fileno(stdout), _O_BINARY);
 }
 
 void main()
 {
-	StreamReader     reader;
-	BytesToBitsConverter toBits;
-	NrziDecoder          nrzi;
-	BitStuffingDecoder   bitStuffing;
-	BitsToBytesConverter toBytes;
-	StreamWriter     writer(std::cout);
+    StreamReader     reader;
+    BytesToBitsConverter toBits;
+    NrziDecoder          nrzi;
+    BitStuffingDecoder   bitStuffing;
+    BitsToBytesConverter toBytes;
+    StreamWriter     writer(std::cout);
 
-	reader
-		.then(toBits)
-		.then(nrzi)
-		.then(bitStuffing)
-		.then(toBytes)
-		.then(writer);
+    reader
+        .then(toBits)
+        .then(nrzi)
+        .then(bitStuffing)
+        .then(toBytes)
+        .then(writer);
 
-	setBinaryMode();
+    setBinaryMode();
 
-	reader.readFrom(std::cin);
+    reader.readFrom(std::cin);
 }

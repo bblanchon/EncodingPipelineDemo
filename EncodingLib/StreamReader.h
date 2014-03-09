@@ -7,6 +7,6 @@
 class StreamReader : public Producer<Byte>
 {
 public:
-	
-	void readFrom(std::istream& stream);
+    
+    void readFrom(std::istream& stream);
 };

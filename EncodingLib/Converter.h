@@ -8,9 +8,9 @@ class Converter : public Consumer<TFrom>, public Producer<TTo>
 {
 public:
 
-	virtual void flush()
-	{
-		Producer::flush();
-	}
+    virtual void flush()
+    {
+        Producer::flush();
+    }
 };
 

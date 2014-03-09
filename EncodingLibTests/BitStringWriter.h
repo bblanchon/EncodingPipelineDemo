@@ -11,18 +11,18 @@ class BitStringWriter : public Consumer<Bit>
 {
 public:
 
-	virtual void receive(Bit inputBit)
-	{
-		buffer += (char) inputBit;
-	}
+    virtual void receive(Bit inputBit)
+    {
+        buffer += (char) inputBit;
+    }
 
-	const char* c_str()
-	{
-		return buffer.c_str();
-	}
+    const char* c_str()
+    {
+        return buffer.c_str();
+    }
 
 private:
 
-	string buffer;
+    string buffer;
 };
 
