@@ -9,7 +9,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(StreamWriterTests)
 	{
-		ByteStringReader stringToBytes;		
+		ByteStringReader reader;		
 		StreamWriter writer;
 		stringstream stream;
 
@@ -23,7 +23,7 @@ namespace EncodingLibTests
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBytes.then(writer);
+			reader.then(writer);
 		}
 
 		TEST_METHOD(Receive_48656C6C6F_Write_Hello)
@@ -40,7 +40,7 @@ namespace EncodingLibTests
 
 		void Receive(const char* bytes)
 		{
-			stringToBytes.read(bytes);
+			reader.read(bytes);
 		}
 		
 		void Wrote(const char* expected)
