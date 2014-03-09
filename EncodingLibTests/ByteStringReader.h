@@ -10,7 +10,7 @@ class ByteStringReader : public Producer<Byte>
 {
 public:
 
-	void receive(const char* s)
+	void read(const char* s)
 	{
 		while (s[0] && s[1])
 		{

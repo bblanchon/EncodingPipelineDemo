@@ -40,7 +40,7 @@ namespace EncodingLibTests
 
 		void Receive(const char* bytes)
 		{
-			stringToBytes.receive(bytes);
+			stringToBytes.read(bytes);
 		}
 		
 		void Wrote(const char* expected)
