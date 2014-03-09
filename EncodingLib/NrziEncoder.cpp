@@ -1,6 +1,6 @@
-#include "NrziForwardConverter.h"
+#include "NrziEncoder.h"
 
-void NrziForwardConverter::receive(bit inputBit)
+void NrziEncoder::receive(bit inputBit)
 {
 	if (inputBit == bit::ZERO)
 	{
@@ -10,7 +10,7 @@ void NrziForwardConverter::receive(bit inputBit)
 	emit(currentLevel);
 }
 
-void NrziForwardConverter::invertLevel()
+void NrziEncoder::invertLevel()
 {
 	currentLevel = currentLevel == bit::ONE ? bit::ZERO : bit::ONE;
 }

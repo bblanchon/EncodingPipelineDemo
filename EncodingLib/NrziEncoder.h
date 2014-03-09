@@ -3,7 +3,7 @@
 #include "Bit.h"
 #include "Converter.h"
 
-class NrziForwardConverter : public Converter<bit, bit>
+class NrziEncoder : public Converter<bit, bit>
 {
 public:
 	
