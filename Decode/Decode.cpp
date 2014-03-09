@@ -17,8 +17,8 @@ void main()
 {
 	ByteStreamReader     reader;
 	BytesToBitsConverter toBits;
-	NrziDecoder nrzi;
-	BitStuffingDecoder      bitStuffing;
+	NrziDecoder          nrzi;
+	BitStuffingDecoder   bitStuffing;
 	BitsToBytesConverter toBytes;
 	ByteStreamWriter     writer(std::cout);
 
