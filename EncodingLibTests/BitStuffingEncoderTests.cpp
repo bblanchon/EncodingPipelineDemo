@@ -11,14 +11,14 @@ namespace EncodingLibTests
 	TEST_CLASS(BitStuffingEncoderTests)
 	{
         BitStringReader    reader;
-		BitStuffingEncoder bitStuffer;
+		BitStuffingEncoder encoder;
 		BitStringWriter    writer;
 		
 	public:
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			reader.then(bitStuffer).then(writer);
+            reader.then(encoder).then(writer);
 		}
 		
 		TEST_METHOD(Receive_Zero_Emit_Zero)
