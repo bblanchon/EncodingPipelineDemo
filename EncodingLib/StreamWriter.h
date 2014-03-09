@@ -8,6 +8,7 @@
 class StreamWriter : public Consumer<Byte>
 {
 public:
+
 	StreamWriter(std::ostream& s)
 		: stream(s)
 	{
@@ -24,6 +25,7 @@ public:
 	}
 	
 private:
+
 	std::ostream& stream;
 };
 
