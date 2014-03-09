@@ -11,7 +11,7 @@ namespace EncodingLibTests
 	TEST_CLASS(BytesToBitsConverterTests)
 	{
 		ByteStringReader     reader;
-		BytesToBitsConverter bytesToBits;
+		BytesToBitsConverter converter;
  		BitStringWriter      writer;
 
 	public:
@@ -19,7 +19,7 @@ namespace EncodingLibTests
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
 			reader
-				.then(bytesToBits)
+				.then(converter)
 				.then(writer);
 		}
 		
