@@ -37,9 +37,6 @@
     <ClCompile Include="BytesToBitsConverterTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UsbBitStufferTests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BitsToBytesConverterTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -56,6 +53,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NrziDecoderTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitStuffingEncoderTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

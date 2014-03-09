@@ -71,7 +71,7 @@
     <ClInclude Include="NrziEncoder.h" />
     <ClInclude Include="ByteStreamReader.h" />
     <ClInclude Include="NrziDecoder.h" />
-    <ClInclude Include="UsbBitStuffer.h" />
+    <ClInclude Include="BitStuffingEncoder.h" />
     <ClInclude Include="Byte.h" />
     <ClInclude Include="BytesToBitsConverter.h" />
     <ClInclude Include="Consumer.h" />
@@ -85,7 +85,7 @@
     <ClCompile Include="ByteStreamReader.cpp" />
     <ClCompile Include="NrziDecoder.cpp" />
     <ClCompile Include="UsbBitUnstuffer.cpp" />
-    <ClCompile Include="UsbBitStuffer.cpp" />
+    <ClCompile Include="BitStuffingEncoder.cpp" />
     <ClCompile Include="BytesToBitsConverter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

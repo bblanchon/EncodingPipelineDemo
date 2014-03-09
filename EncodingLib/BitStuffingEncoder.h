@@ -3,7 +3,7 @@
 #include "Bit.h"
 #include "Converter.h"
 
-class UsbBitStuffer : public Converter<bit, bit>
+class BitStuffingEncoder : public Converter<bit, bit>
 {
 public:
 

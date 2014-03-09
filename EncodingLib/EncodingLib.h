@@ -6,5 +6,5 @@
 #include "ByteStreamWriter.h"
 #include "NrziEncoder.h"
 #include "NrziDecoder.h"
-#include "UsbBitStuffer.h"
+#include "BitStuffingEncoder.h"
 #include "UsbBitUnstuffer.h"

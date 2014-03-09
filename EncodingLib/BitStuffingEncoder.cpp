@@ -1,6 +1,6 @@
-#include "UsbBitStuffer.h"
+#include "BitStuffingEncoder.h"
 
-void UsbBitStuffer::receive(bit bitReceived)
+void BitStuffingEncoder::receive(bit bitReceived)
 {
 	emit(bitReceived);
 
