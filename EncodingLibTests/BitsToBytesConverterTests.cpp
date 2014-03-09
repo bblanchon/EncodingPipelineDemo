@@ -11,16 +11,14 @@ namespace EncodingLibTests
 	TEST_CLASS(BitsToBytesConverterTests)
 	{
 		BitStringReader      reader;
-		BitsToBytesConverter bitsToBytes;
+		BitsToBytesConverter converter;
 		ByteStringWriter     writer;
 
 	public:
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			reader
-				.then(bitsToBytes)
-				.then(writer);
+			reader.then(converter).then(writer);
 		}
 
 		TEST_METHOD(Receive_Nothing_Emit_Nothing)
