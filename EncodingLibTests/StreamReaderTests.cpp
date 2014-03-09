@@ -10,13 +10,13 @@ namespace EncodingLibTests
 	TEST_CLASS(StreamReaderTests)
 	{
 		StreamReader reader;
-		ByteStringWriter bytesToString;
+		ByteStringWriter writer;
 
 	public:
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			reader.then(bytesToString);
+			reader.then(writer);
 		}
 		
 		TEST_METHOD(Read_Hello_Emit_48656C6C6F)
@@ -40,7 +40,7 @@ namespace EncodingLibTests
 
 		void Emitted(const char* expected)
 		{
-			Assert::AreEqual(expected, bytesToString.c_str());
+			Assert::AreEqual(expected, writer.c_str());
 		}
 	};
 }
