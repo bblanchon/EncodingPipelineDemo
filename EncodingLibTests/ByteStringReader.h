@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class StringToBytesConverter : public Producer<Byte>
+class ByteStringReader : public Producer<Byte>
 {
 public:
 

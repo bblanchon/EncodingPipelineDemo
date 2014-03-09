@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "EncodingLib.h"
-#include "StringToBytesConverter.h"
+#include "ByteStringReader.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -9,7 +9,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(StreamWriterTests)
 	{
-		StringToBytesConverter stringToBytes;		
+		ByteStringReader stringToBytes;		
 		StreamWriter writer;
 		stringstream stream;
 

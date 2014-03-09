@@ -17,9 +17,6 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StringToBytesConverter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="BitStringWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -27,6 +24,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BitStringReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteStringReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
