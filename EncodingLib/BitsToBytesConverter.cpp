@@ -20,7 +20,7 @@ Byte BitsToBytesConverter::getByteInBuffer()
 	{
 		if (buffer[i] == Bit::ONE)
 		{
-			result |= 128 >> i;
+			result |= MOST_SIGNIFICANT_BIT >> i;
 		}
 	}
 
