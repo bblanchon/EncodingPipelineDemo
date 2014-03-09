@@ -2,7 +2,7 @@
 
 #include "EncodingLib.h"
 #include "BitStringWriter.h"
-#include "StringToBitsConverter.h"
+#include "BitStringReader.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -12,7 +12,7 @@ namespace EncodingLibTests
 	{
 		NrziDecoder nrzi;
 		BitStringWriter bitsToString;
-		StringToBitsConverter stringToBits;
+		BitStringReader stringToBits;
 
 	public:
 

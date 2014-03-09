@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "EncodingLib.h"
-#include "StringToBitsConverter.h"
+#include "BitStringReader.h"
 #include "ByteStringWriter.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -10,7 +10,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(BitsToBytesConverterTests)
 	{
-		StringToBitsConverter stringToBits;
+		BitStringReader stringToBits;
 		BitsToBytesConverter bitsToBytes;
 		ByteStringWriter bytesToString;
 

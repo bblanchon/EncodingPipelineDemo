@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class StringToBitsConverter : public Producer<Bit>
+class BitStringReader : public Producer<Bit>
 {
 public:
 	
