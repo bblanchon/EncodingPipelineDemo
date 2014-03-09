@@ -11,14 +11,14 @@ namespace EncodingLibTests
 	TEST_CLASS(NrziReverseConverterTests)
 	{
         BitStringReader reader;
-		NrziDecoder     nrzi;
+		NrziDecoder     decoder;
 		BitStringWriter writer;
 
 	public:
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			reader.then(nrzi).then(writer);
+            reader.then(decoder).then(writer);
 		}
 
 		TEST_METHOD(Receive_Zero_Emit_One)
