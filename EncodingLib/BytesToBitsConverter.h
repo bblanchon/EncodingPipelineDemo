@@ -8,10 +8,10 @@ class BytesToBitsConverter : public Converter<Byte,Bit>
 {
 public:
 	
-	virtual void receive(Byte byteReceived);
+	virtual void receive(Byte inputByte);
 
 private:
 
-	void emitBitAtIndex(Byte byteReceived, int index);
+	void emitBitAtIndex(Byte inputByte, int index);
 };
 
