@@ -8,7 +8,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(NrziReverseConverterTests)
+	TEST_CLASS(NrziDecoderTests)
 	{
         BitStringReader reader;
 		NrziDecoder     decoder;
