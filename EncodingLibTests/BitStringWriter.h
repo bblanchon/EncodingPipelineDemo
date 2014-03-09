@@ -11,9 +11,9 @@ class BitStringWriter : public Consumer<Bit>
 {
 public:
 
-	virtual void receive(Bit receivedBit)
+	virtual void receive(Bit inputBit)
 	{
-		buffer += (char) receivedBit;
+		buffer += (char) inputBit;
 	}
 
 	const char* c_str()
