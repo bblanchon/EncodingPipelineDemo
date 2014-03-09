@@ -20,7 +20,7 @@ void main()
 	BitStuffingEncoder   bitStuffing;
 	NrziEncoder          nrzi;
 	BitsToBytesConverter toBytes;
-	ByteStreamWriter     writer(std::cout);
+	StreamWriter     writer(std::cout);
 
 	reader
 		.then(toBits)

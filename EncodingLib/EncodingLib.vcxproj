@@ -66,7 +66,7 @@
   <ItemGroup>
     <ClInclude Include="Bit.h" />
     <ClInclude Include="BitsToBytesConverter.h" />
-    <ClInclude Include="ByteStreamWriter.h" />
+    <ClInclude Include="StreamWriter.h" />
     <ClInclude Include="Converter.h" />
     <ClInclude Include="NrziEncoder.h" />
     <ClInclude Include="StreamReader.h" />

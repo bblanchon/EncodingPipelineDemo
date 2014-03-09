@@ -93,7 +93,7 @@
   <ItemGroup>
     <ClCompile Include="BitsToBytesConverterTests.cpp" />
     <ClCompile Include="StreamReaderTests.cpp" />
-    <ClCompile Include="ByteStreamWriterTests.cpp" />
+    <ClCompile Include="StreamWriterTests.cpp" />
     <ClCompile Include="NrziEncoderTests.cpp" />
     <ClCompile Include="NrziDecoderTests.cpp" />
     <ClCompile Include="BitStuffingDecoderTests.cpp" />

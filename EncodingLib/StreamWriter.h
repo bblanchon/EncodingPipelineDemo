@@ -5,10 +5,10 @@
 
 #include <ostream>
 
-class ByteStreamWriter : public Consumer<Byte>
+class StreamWriter : public Consumer<Byte>
 {
 public:
-	ByteStreamWriter(std::ostream& s)
+	StreamWriter(std::ostream& s)
 		: stream(s)
 	{
 	}

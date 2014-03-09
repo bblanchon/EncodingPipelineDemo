@@ -7,15 +7,15 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(ByteStreamWriterTests)
+	TEST_CLASS(StreamWriterTests)
 	{
 		StringToBytesConverter stringToBytes;		
-		ByteStreamWriter writer;
+		StreamWriter writer;
 		stringstream stream;
 
 	public:
 
-		ByteStreamWriterTests()
+		StreamWriterTests()
 			: writer(stream)
 		{
 

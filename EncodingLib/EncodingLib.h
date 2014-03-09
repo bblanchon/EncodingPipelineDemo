@@ -3,7 +3,7 @@
 #include "Byte.h"
 #include "BytesToBitsConverter.h"
 #include "StreamReader.h"
-#include "ByteStreamWriter.h"
+#include "StreamWriter.h"
 #include "NrziEncoder.h"
 #include "NrziDecoder.h"
 #include "BitStuffingEncoder.h"

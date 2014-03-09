@@ -35,9 +35,6 @@
     <ClInclude Include="Converter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ByteStreamWriter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NrziEncoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StreamReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
