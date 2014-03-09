@@ -9,7 +9,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(StreamReaderTests)
 	{
-		StreamReader reader;
+		StreamReader     reader;
 		ByteStringWriter writer;
 
 	public:
