@@ -5,7 +5,7 @@
 
 #include <ostream>
 
-class ByteStreamWriter : public Consumer<byte>
+class ByteStreamWriter : public Consumer<Byte>
 {
 public:
 	ByteStreamWriter(std::ostream& s)
@@ -13,7 +13,7 @@ public:
 	{
 	}
 
-	virtual void receive(byte inputByte)
+	virtual void receive(Byte inputByte)
 	{
 		stream.put(inputByte);
 	}

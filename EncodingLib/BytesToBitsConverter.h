@@ -4,14 +4,14 @@
 #include "Byte.h"
 #include "Converter.h"
 
-class BytesToBitsConverter : public Converter<byte,Bit>
+class BytesToBitsConverter : public Converter<Byte,Bit>
 {
 public:
 	
-	virtual void receive(byte byteReceived);
+	virtual void receive(Byte byteReceived);
 
 private:
 
-	void emitBitAtIndex(byte byteReceived, int index);
+	void emitBitAtIndex(Byte byteReceived, int index);
 };
 

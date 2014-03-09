@@ -12,9 +12,9 @@ void BitsToBytesConverter::receive(Bit inputBit)
 	}
 }
 
-byte BitsToBytesConverter::getByteInBuffer()
+Byte BitsToBytesConverter::getByteInBuffer()
 {
-	byte result = 0;
+	Byte result = 0;
 
 	for (int i = 0; i < BYTE_SIZE; i++)
 	{

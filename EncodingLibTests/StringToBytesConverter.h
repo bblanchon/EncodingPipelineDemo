@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class StringToBytesConverter : public Producer<byte>
+class StringToBytesConverter : public Producer<Byte>
 {
 public:
 
@@ -22,9 +22,9 @@ public:
 		flush();
 	}
 
-	byte parseByte(const char *s)
+	Byte parseByte(const char *s)
 	{
 		char tmp[] = { s[0], s[1], 0 };
-		return (byte) strtol(tmp, NULL, 16);
+		return (Byte) strtol(tmp, NULL, 16);
 	}
 };

@@ -4,7 +4,7 @@
 #include "Byte.h"
 #include "Producer.h"
 
-class ByteStreamReader : public Producer<byte>
+class ByteStreamReader : public Producer<Byte>
 {
 public:
 	

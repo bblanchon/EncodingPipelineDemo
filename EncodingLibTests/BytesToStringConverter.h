@@ -7,11 +7,11 @@
 
 using namespace std;
 
-class BytesToStringConverter : public Consumer<byte>
+class BytesToStringConverter : public Consumer<Byte>
 {
 public:
 
-	virtual void receive(byte inputByte)
+	virtual void receive(Byte inputByte)
 	{
 		stream << hex << setw(2) << setfill('0') << uppercase << (int) inputByte;
 	}

@@ -1,6 +1,6 @@
 #include "BytesToBitsConverter.h"
 
-void BytesToBitsConverter::receive(byte byteReceived)
+void BytesToBitsConverter::receive(Byte byteReceived)
 {
 	for (int i = 0; i < BYTE_SIZE; i++)
 	{
@@ -8,7 +8,7 @@ void BytesToBitsConverter::receive(byte byteReceived)
 	}
 }
 
-void BytesToBitsConverter::emitBitAtIndex(byte byteReceived, int index)
+void BytesToBitsConverter::emitBitAtIndex(Byte byteReceived, int index)
 {
 	if ((byteReceived << index) & MOST_SIGNIFICANT_BIT)
 		emit(Bit::ONE);

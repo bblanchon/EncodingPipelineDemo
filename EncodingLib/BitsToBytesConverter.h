@@ -4,7 +4,7 @@
 #include "Byte.h"
 #include "Converter.h"
 
-class BitsToBytesConverter : public Converter<Bit, byte>
+class BitsToBytesConverter : public Converter<Bit, Byte>
 {
 public:
 	
@@ -16,7 +16,7 @@ private:
 	Bit buffer[BYTE_SIZE];
 	int bufferLength = 0;
 
-	byte getByteInBuffer();
+	Byte getByteInBuffer();
 
 	bool isPaddingNeeded()
 	{
