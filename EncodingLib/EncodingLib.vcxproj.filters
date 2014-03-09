@@ -47,10 +47,10 @@
     <ClInclude Include="UsbBitUnstuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NrziReverseConverter.h">
+    <ClInclude Include="NrziEncoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NrziEncoder.h">
+    <ClInclude Include="NrziDecoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -70,10 +70,10 @@
     <ClCompile Include="UsbBitUnstuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NrziReverseConverter.cpp">
+    <ClCompile Include="NrziEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NrziEncoder.cpp">
+    <ClCompile Include="NrziDecoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

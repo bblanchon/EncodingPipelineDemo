@@ -70,7 +70,7 @@
     <ClInclude Include="Converter.h" />
     <ClInclude Include="NrziEncoder.h" />
     <ClInclude Include="ByteStreamReader.h" />
-    <ClInclude Include="NrziReverseConverter.h" />
+    <ClInclude Include="NrziDecoder.h" />
     <ClInclude Include="UsbBitStuffer.h" />
     <ClInclude Include="Byte.h" />
     <ClInclude Include="BytesToBitsConverter.h" />
@@ -83,7 +83,7 @@
     <ClCompile Include="BitsToBytesConverter.cpp" />
     <ClCompile Include="NrziEncoder.cpp" />
     <ClCompile Include="ByteStreamReader.cpp" />
-    <ClCompile Include="NrziReverseConverter.cpp" />
+    <ClCompile Include="NrziDecoder.cpp" />
     <ClCompile Include="UsbBitUnstuffer.cpp" />
     <ClCompile Include="UsbBitStuffer.cpp" />
     <ClCompile Include="BytesToBitsConverter.cpp" />

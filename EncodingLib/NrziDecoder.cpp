@@ -1,6 +1,6 @@
-#include "NrziReverseConverter.h"
+#include "NrziDecoder.h"
 
-void NrziReverseConverter::receive(bit inputBit)
+void NrziDecoder::receive(bit inputBit)
 {
 	emit(inputBit != currentLevel ? bit::ZERO : bit::ONE);
 

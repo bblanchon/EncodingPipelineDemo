@@ -10,7 +10,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(NrziReverseConverterTests)
 	{
-		NrziReverseConverter nrzi;
+		NrziDecoder nrzi;
 		BitsToStringConverter bitsToString;
 		StringToBitsConverter stringToBits;
 

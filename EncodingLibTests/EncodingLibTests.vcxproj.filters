@@ -40,9 +40,6 @@
     <ClCompile Include="UsbBitStufferTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NrziForwardConverterTests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BitsToBytesConverterTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -55,7 +52,10 @@
     <ClCompile Include="UsbBitUnstufferTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NrziReverseConverterTests.cpp">
+    <ClCompile Include="NrziEncoderTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NrziDecoderTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
