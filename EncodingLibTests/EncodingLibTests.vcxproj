@@ -83,7 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BitsToStringConverter.h" />
+    <ClInclude Include="BitStringWriter.h" />
     <ClInclude Include="BytesToStringConverter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringToBitsConverter.h" />

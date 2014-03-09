@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "EncodingLib.h"
-#include "BitsToStringConverter.h"
+#include "BitStringWriter.h"
 #include "StringToBitsConverter.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -11,7 +11,7 @@ namespace EncodingLibTests
 	TEST_CLASS(BitStuffingEncoderTests)
 	{
 		BitStuffingEncoder bitStuffer;
-		BitsToStringConverter bitsToString;
+		BitStringWriter bitsToString;
 		StringToBitsConverter stringToBits;
 		
 	public:
