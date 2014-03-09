@@ -12,13 +12,13 @@ namespace EncodingLibTests
 	{
 		NrziEncoder nrzi;
 		BitStringWriter bitsToString;
-		BitStringReader stringToBits;
+		BitStringReader reader;
 
 	public:
 		
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBits
+			reader
 				.then(nrzi)
 				.then(bitsToString);
 		}
@@ -61,7 +61,7 @@ namespace EncodingLibTests
 
 		void Receive(const char * bits)
 		{
-			stringToBits.read(bits);
+			reader.read(bits);
 		}
 
 		void Emitted(const char * expected)

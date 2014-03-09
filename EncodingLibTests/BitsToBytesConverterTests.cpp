@@ -10,7 +10,7 @@ namespace EncodingLibTests
 {
 	TEST_CLASS(BitsToBytesConverterTests)
 	{
-		BitStringReader stringToBits;
+		BitStringReader      reader;
 		BitsToBytesConverter bitsToBytes;
 		ByteStringWriter bytesToString;
 
@@ -18,7 +18,7 @@ namespace EncodingLibTests
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBits
+			reader
 				.then(bitsToBytes)
 				.then(bytesToString);
 		}
@@ -73,7 +73,7 @@ namespace EncodingLibTests
 
 		void Receive(const char * bits)
 		{
-			stringToBits.read(bits);
+			reader.read(bits);
 		}
 
 		void Emitted(const char * expected)

@@ -12,13 +12,13 @@ namespace EncodingLibTests
 	{
 		BitStuffingDecoder bitUnstuffer;
 		BitStringWriter bitsToString;
-		BitStringReader stringToBits;
+		BitStringReader reader;
 
 	public:
 
 		TEST_METHOD_INITIALIZE(Initialize)
 		{
-			stringToBits
+			reader
 				.then(bitUnstuffer)
 				.then(bitsToString);
 		}
@@ -74,7 +74,7 @@ namespace EncodingLibTests
 
 		void Receive(const char * bits)
 		{
-			stringToBits.read(bits);
+			reader.read(bits);
 		}
 
 		void Emitted(const char * expected)
