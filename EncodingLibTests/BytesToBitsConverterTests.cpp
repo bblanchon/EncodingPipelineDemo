@@ -12,7 +12,7 @@ namespace EncodingLibTests
 	{
 		ByteStringReader     reader;
 		BytesToBitsConverter bytesToBits;
- 		BitStringWriter bitsToString;
+ 		BitStringWriter      writer;
 
 	public:
 
@@ -20,7 +20,7 @@ namespace EncodingLibTests
 		{
 			reader
 				.then(bytesToBits)
-				.then(bitsToString);
+				.then(writer);
 		}
 		
 		TEST_METHOD(Receive_Nothing_Emit_Nothing)
@@ -60,7 +60,7 @@ namespace EncodingLibTests
 
 		void Emitted(const char* expected)
 		{
-			Assert::AreEqual(expected, bitsToString.c_str());
+			Assert::AreEqual(expected, writer.c_str());
 		}
 	};
 }

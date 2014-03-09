@@ -11,7 +11,7 @@ namespace EncodingLibTests
 	TEST_CLASS(NrziReverseConverterTests)
 	{
 		NrziDecoder nrzi;
-		BitStringWriter bitsToString;
+		BitStringWriter writer;
 		BitStringReader reader;
 
 	public:
@@ -20,7 +20,7 @@ namespace EncodingLibTests
 		{
 			reader
 				.then(nrzi)
-				.then(bitsToString);
+				.then(writer);
 		}
 
 		TEST_METHOD(Receive_Zero_Emit_One)
@@ -66,7 +66,7 @@ namespace EncodingLibTests
 
 		void Emitted(const char * expected)
 		{
-			Assert::AreEqual(expected, bitsToString.c_str());
+			Assert::AreEqual(expected, writer.c_str());
 		}
 	};
 }

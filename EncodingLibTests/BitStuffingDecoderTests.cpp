@@ -11,7 +11,7 @@ namespace EncodingLibTests
 	TEST_CLASS(BitStuffingDecoderTests)
 	{
 		BitStuffingDecoder bitUnstuffer;
-		BitStringWriter bitsToString;
+		BitStringWriter writer;
 		BitStringReader reader;
 
 	public:
@@ -20,7 +20,7 @@ namespace EncodingLibTests
 		{
 			reader
 				.then(bitUnstuffer)
-				.then(bitsToString);
+				.then(writer);
 		}
 
 		TEST_METHOD(Receive_Zero_Emit_Zero)
@@ -79,7 +79,7 @@ namespace EncodingLibTests
 
 		void Emitted(const char * expected)
 		{
-			Assert::AreEqual(expected, bitsToString.c_str());
+			Assert::AreEqual(expected, writer.c_str());
 		}
 	};
 }
