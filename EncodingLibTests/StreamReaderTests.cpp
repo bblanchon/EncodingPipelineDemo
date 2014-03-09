@@ -7,9 +7,9 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(ByteStreamReaderTests)
+	TEST_CLASS(StreamReaderTests)
 	{
-		ByteStreamReader reader;
+		StreamReader reader;
 		BytesToStringConverter bytesToString;
 
 	public:

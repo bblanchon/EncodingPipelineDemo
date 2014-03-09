@@ -15,7 +15,7 @@ void setBinaryMode()
 
 void main()
 {
-	ByteStreamReader     reader;
+	StreamReader     reader;
 	BytesToBitsConverter toBits;
 	NrziDecoder          nrzi;
 	BitStuffingDecoder   bitStuffing;

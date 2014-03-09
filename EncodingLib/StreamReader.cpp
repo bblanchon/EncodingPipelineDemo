@@ -1,6 +1,6 @@
-#include "ByteStreamReader.h"
+#include "StreamReader.h"
 
-void ByteStreamReader::readFrom(std::istream& stream)
+void StreamReader::readFrom(std::istream& stream)
 {
 	while (true)
 	{

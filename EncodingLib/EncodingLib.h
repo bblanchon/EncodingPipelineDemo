@@ -2,7 +2,7 @@
 #include "BitsToBytesConverter.h"
 #include "Byte.h"
 #include "BytesToBitsConverter.h"
-#include "ByteStreamReader.h"
+#include "StreamReader.h"
 #include "ByteStreamWriter.h"
 #include "NrziEncoder.h"
 #include "NrziDecoder.h"

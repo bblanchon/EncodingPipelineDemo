@@ -69,7 +69,7 @@
     <ClInclude Include="ByteStreamWriter.h" />
     <ClInclude Include="Converter.h" />
     <ClInclude Include="NrziEncoder.h" />
-    <ClInclude Include="ByteStreamReader.h" />
+    <ClInclude Include="StreamReader.h" />
     <ClInclude Include="NrziDecoder.h" />
     <ClInclude Include="BitStuffingEncoder.h" />
     <ClInclude Include="Byte.h" />
@@ -82,7 +82,7 @@
   <ItemGroup>
     <ClCompile Include="BitsToBytesConverter.cpp" />
     <ClCompile Include="NrziEncoder.cpp" />
-    <ClCompile Include="ByteStreamReader.cpp" />
+    <ClCompile Include="StreamReader.cpp" />
     <ClCompile Include="NrziDecoder.cpp" />
     <ClCompile Include="BitStuffingDecoder.cpp" />
     <ClCompile Include="BitStuffingEncoder.cpp" />

@@ -4,10 +4,9 @@
 #include "Byte.h"
 #include "Producer.h"
 
-class ByteStreamReader : public Producer<Byte>
+class StreamReader : public Producer<Byte>
 {
 public:
 	
 	void readFrom(std::istream& stream);
 };
-
