@@ -46,9 +46,6 @@
     <ClCompile Include="ByteStreamWriterTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UsbBitUnstufferTests.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NrziEncoderTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -56,6 +53,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BitStuffingEncoderTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitStuffingDecoderTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

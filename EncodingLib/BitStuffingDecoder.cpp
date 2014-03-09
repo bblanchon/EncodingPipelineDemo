@@ -1,6 +1,6 @@
-#include "UsbBitUnstuffer.h"
+#include "BitStuffingDecoder.h"
 
-void UsbBitUnstuffer::receive(bit bitReceived)
+void BitStuffingDecoder::receive(bit bitReceived)
 {
 	if (consecutiveOnes < MAX_CONSECUTIVE_ONES)
 	{

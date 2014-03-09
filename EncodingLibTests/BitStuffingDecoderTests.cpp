@@ -8,9 +8,9 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace EncodingLibTests
 {
-	TEST_CLASS(UsbBitUnstufferTests)
+	TEST_CLASS(BitStuffingDecoderTests)
 	{
-		UsbBitUnstuffer bitUnstuffer;
+		BitStuffingDecoder bitUnstuffer;
 		BitsToStringConverter bitsToString;
 		StringToBitsConverter stringToBits;
 

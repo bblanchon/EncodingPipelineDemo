@@ -77,14 +77,14 @@
     <ClInclude Include="Consumer.h" />
     <ClInclude Include="EncodingLib.h" />
     <ClInclude Include="Producer.h" />
-    <ClInclude Include="UsbBitUnstuffer.h" />
+    <ClInclude Include="BitStuffingDecoder.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BitsToBytesConverter.cpp" />
     <ClCompile Include="NrziEncoder.cpp" />
     <ClCompile Include="ByteStreamReader.cpp" />
     <ClCompile Include="NrziDecoder.cpp" />
-    <ClCompile Include="UsbBitUnstuffer.cpp" />
+    <ClCompile Include="BitStuffingDecoder.cpp" />
     <ClCompile Include="BitStuffingEncoder.cpp" />
     <ClCompile Include="BytesToBitsConverter.cpp" />
   </ItemGroup>
