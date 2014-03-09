@@ -10,7 +10,7 @@ class BitStringReader : public Producer<Bit>
 {
 public:
 	
-	void receive(const char* s)
+	void read(const char* s)
 	{
 		while (*s)
 		{

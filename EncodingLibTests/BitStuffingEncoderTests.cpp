@@ -68,7 +68,7 @@ namespace EncodingLibTests
 
 		void Receive(const char * bits)
 		{
-			stringToBits.receive(bits);
+			stringToBits.read(bits);
 		}
 
 		void Emitted(const char * expected)
