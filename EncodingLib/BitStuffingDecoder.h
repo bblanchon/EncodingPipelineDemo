@@ -3,11 +3,11 @@
 #include "Bit.h"
 #include "Converter.h"
 
-class BitStuffingDecoder : public Converter<bit, bit>
+class BitStuffingDecoder : public Converter<Bit, Bit>
 {
 public:
 
-	virtual void receive(bit bitReceived);
+	virtual void receive(Bit bitReceived);
 
 private:
 

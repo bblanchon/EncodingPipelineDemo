@@ -1,7 +1,7 @@
 #include "BitsToBytesConverter.h"
 
 
-void BitsToBytesConverter::receive(bit inputBit)
+void BitsToBytesConverter::receive(Bit inputBit)
 {
 	buffer[bufferLength++] = inputBit;
 
@@ -18,7 +18,7 @@ byte BitsToBytesConverter::getByteInBuffer()
 
 	for (int i = 0; i < BYTE_SIZE; i++)
 	{
-		if (buffer[i] == bit::ONE)
+		if (buffer[i] == Bit::ONE)
 		{
 			result |= 128 >> i;
 		}

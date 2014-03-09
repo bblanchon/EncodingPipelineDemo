@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class StringToBitsConverter : public Producer<bit>
+class StringToBitsConverter : public Producer<Bit>
 {
 public:
 	
@@ -14,7 +14,7 @@ public:
 	{
 		while (*s)
 		{
-			emit((bit) *s);
+			emit((Bit) *s);
 			s++;
 		}
 

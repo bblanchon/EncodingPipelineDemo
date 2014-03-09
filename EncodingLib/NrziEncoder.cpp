@@ -1,8 +1,8 @@
 #include "NrziEncoder.h"
 
-void NrziEncoder::receive(bit inputBit)
+void NrziEncoder::receive(Bit inputBit)
 {
-	if (inputBit == bit::ZERO)
+	if (inputBit == Bit::ZERO)
 	{
 		invertLevel();
 	}
@@ -12,5 +12,5 @@ void NrziEncoder::receive(bit inputBit)
 
 void NrziEncoder::invertLevel()
 {
-	currentLevel = currentLevel == bit::ONE ? bit::ZERO : bit::ONE;
+	currentLevel = currentLevel == Bit::ONE ? Bit::ZERO : Bit::ONE;
 }

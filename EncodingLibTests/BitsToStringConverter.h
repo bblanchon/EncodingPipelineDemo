@@ -7,10 +7,10 @@
 
 using namespace std;
 
-class BitsToStringConverter : public Consumer<bit>
+class BitsToStringConverter : public Consumer<Bit>
 {
 public:
-	virtual void receive(bit receivedBit)
+	virtual void receive(Bit receivedBit)
 	{
 		buffer += (char) receivedBit;
 	}

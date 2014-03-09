@@ -1,6 +1,6 @@
 #pragma once
 
-enum bit
+enum Bit
 {
 	ZERO = '0',
 	ONE = '1'

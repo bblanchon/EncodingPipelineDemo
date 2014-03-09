@@ -4,16 +4,16 @@
 #include "Byte.h"
 #include "Converter.h"
 
-class BitsToBytesConverter : public Converter<bit, byte>
+class BitsToBytesConverter : public Converter<Bit, byte>
 {
 public:
 	
-	virtual void receive(bit inputBit);
+	virtual void receive(Bit inputBit);
 	virtual void flush();
 
 private:
 
-	bit buffer[BYTE_SIZE];
+	Bit buffer[BYTE_SIZE];
 	int bufferLength = 0;
 
 	byte getByteInBuffer();
@@ -25,7 +25,7 @@ private:
 
 	void addPaddingBit()
 	{
-		receive(bit::ZERO);
+		receive(Bit::ZERO);
 	}
 };
 

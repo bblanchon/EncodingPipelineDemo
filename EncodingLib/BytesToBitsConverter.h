@@ -4,7 +4,7 @@
 #include "Byte.h"
 #include "Converter.h"
 
-class BytesToBitsConverter : public Converter<byte,bit>
+class BytesToBitsConverter : public Converter<byte,Bit>
 {
 public:
 	

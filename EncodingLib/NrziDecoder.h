@@ -3,13 +3,13 @@
 #include "Bit.h"
 #include "Converter.h"
 
-class NrziDecoder : public Converter<bit, bit>
+class NrziDecoder : public Converter<Bit, Bit>
 {
 public:
 
-	virtual void receive(bit inputBit);
+	virtual void receive(Bit inputBit);
 
 private:
 
-	bit currentLevel = bit::ZERO;
+	Bit currentLevel = Bit::ZERO;
 };

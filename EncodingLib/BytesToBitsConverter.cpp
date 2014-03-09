@@ -11,7 +11,7 @@ void BytesToBitsConverter::receive(byte byteReceived)
 void BytesToBitsConverter::emitBitAtIndex(byte byteReceived, int index)
 {
 	if ((byteReceived << index) & MOST_SIGNIFICANT_BIT)
-		emit(bit::ONE);
+		emit(Bit::ONE);
 	else
-		emit(bit::ZERO);
+		emit(Bit::ZERO);
 }

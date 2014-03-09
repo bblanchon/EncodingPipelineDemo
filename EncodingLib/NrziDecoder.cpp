@@ -1,8 +1,8 @@
 #include "NrziDecoder.h"
 
-void NrziDecoder::receive(bit inputBit)
+void NrziDecoder::receive(Bit inputBit)
 {
-	emit(inputBit != currentLevel ? bit::ZERO : bit::ONE);
+	emit(inputBit != currentLevel ? Bit::ZERO : Bit::ONE);
 
 	currentLevel = inputBit;
 }
