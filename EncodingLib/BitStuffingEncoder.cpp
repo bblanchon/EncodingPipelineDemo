@@ -1,10 +1,10 @@
 #include "BitStuffingEncoder.h"
 
-void BitStuffingEncoder::receive(Bit bitReceived)
+void BitStuffingEncoder::receive(Bit inputBit)
 {
-	emit(bitReceived);
+	emit(inputBit);
 
-	if (bitReceived == Bit::ONE)
+	if (inputBit == Bit::ONE)
 	{
 		consecutiveOnes++;
 

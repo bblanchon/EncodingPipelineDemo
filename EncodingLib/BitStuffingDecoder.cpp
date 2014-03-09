@@ -1,12 +1,12 @@
 #include "BitStuffingDecoder.h"
 
-void BitStuffingDecoder::receive(Bit bitReceived)
+void BitStuffingDecoder::receive(Bit inputBit)
 {
 	if (consecutiveOnes < MAX_CONSECUTIVE_ONES)
 	{
-		emit(bitReceived);
+		emit(inputBit);
 
-		if (bitReceived == Bit::ONE)
+		if (inputBit == Bit::ONE)
 		{
 			consecutiveOnes++;
 		}

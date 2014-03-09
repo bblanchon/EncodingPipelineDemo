@@ -7,7 +7,7 @@ class BitStuffingEncoder : public Converter<Bit, Bit>
 {
 public:
 
-	virtual void receive(Bit bitReceived);
+	virtual void receive(Bit inputBit);
 
 private:
 
