@@ -20,13 +20,13 @@
     <ClInclude Include="StringToBitsConverter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BytesToStringConverter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StringToBytesConverter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BitStringWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteStringWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class BytesToStringConverter : public Consumer<Byte>
+class ByteStringWriter : public Consumer<Byte>
 {
 public:
 
