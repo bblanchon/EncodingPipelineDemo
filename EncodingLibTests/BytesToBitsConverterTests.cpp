@@ -12,7 +12,7 @@ namespace EncodingLibTests
     {
         ByteStringReader     reader;
         BytesToBitsConverter converter;
-         BitStringWriter      writer;
+        BitStringWriter      writer;
 
     public:
 

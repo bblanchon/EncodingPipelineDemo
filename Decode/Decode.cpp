@@ -15,12 +15,12 @@ void setBinaryMode()
 
 void main()
 {
-    StreamReader     reader;
+    StreamReader         reader;
     BytesToBitsConverter toBits;
     NrziDecoder          nrzi;
     BitStuffingDecoder   bitStuffing;
     BitsToBytesConverter toBytes;
-    StreamWriter     writer(std::cout);
+    StreamWriter         writer(std::cout);
 
     reader
         .then(toBits)
